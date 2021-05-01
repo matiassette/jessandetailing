@@ -1,0 +1,139 @@
+h1{
+    text-align: center;
+    text-decoration-color: honeydew;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    color: white; /* aca se pone el color a las letras */
+    font-size: 50px;
+    text-shadow: blueviolet 1px 1px;
+    color: orange;
+    
+}
+h4{
+    color: blueviolet; /* aca se pone el color a las letras */
+
+}
+body{
+	background:url(img/img1.jpg) no-repeat center center fixed;
+	background-size:cover;
+	height:400px;
+	width: 100%;
+	/* position: relative;
+	left:0;
+	top:0; */
+}
+/* body{
+    background-color: violet;
+    /* background-image:url(img1.jpg);
+} */
+div{
+    /* todo los div la parte que referencia va aser de color blanca */
+    text-align: center;
+    border: 10px;
+    color: aquamarine;
+    border-top-style: white;
+    border-right-style: white;
+    border-bottom-style: white;
+    border-left-style: white;
+    text-decoration-color: honeydew;
+    background-color: blue;
+    display: grid;
+    /* grid-template-columns: 200px repeat(2, 200px) 100px; */
+    /* grid-template-rows: repeat(2, 50px 100px); */
+
+    background: orangered;
+    grid-column-start: x0;
+    grid-column-end: x3; 
+    
+    /* Equivalente a*/
+    grid-column: x0 / x3;
+
+}
+.colores{
+    /* todo los div la parte que referencia va aser de color blanca */
+    text-align: center;
+    border: 10px;
+    color: aquamarine;
+    border-top-style: white;
+    border-right-style: white;
+    border-bottom-style: white;
+    border-left-style: white;
+    text-decoration-color: honeydew;
+    background-color: blue;
+    display: grid;
+    /* grid-template-columns: 200px repeat(2, 200px) 100px; */
+    /* grid-template-rows: repeat(2, 50px 100px); */
+
+    background: orangered;
+    grid-column-start: x0;
+    grid-column-end: x3; 
+    
+    /* Equivalente a*/
+    grid-column: x0 / x3;
+
+}
+.centrado{
+    text-align: center;
+    float: center;
+}
+.tablaNueva{
+    text-align: center;
+    border: 10px;
+    color: aquamarine;
+    border-top-style: white;
+    border-right-style: white;
+    border-bottom-style: white;
+    border-left-style: white;
+    text-decoration-color: honeydew;
+    background-color: blue;
+    font-size: 50px;
+
+}
+p1{ 
+    text-align: center;
+    text-decoration-color: honeydew;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    color: white; /* aca se pone el color a las letras */
+    font-size: 50px;
+    text-shadow: blueviolet 1px 1px;
+    color: orange;
+}
+.form{
+    text-align: center;
+    text-decoration-color: honeydew;
+    background-color: green;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    color: white; /* aca se pone el color a las letras */
+    font-size: 50px;
+    text-shadow: blueviolet 0px 0px;
+    color: orange;
+}
+table{
+    text-align: center;
+    text-decoration-color: honeydew;
+    background-color: green;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    color: white; /* aca se pone el color a las letras */
+    font-size: 20px;
+    text-shadow: blueviolet 0px 0px;
+    float: center;
+}
+color{
+    text-align: center;
+    text-decoration-color: honeydew;
+    color: white;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    color: white; /* aca se pone el color a las letras */
+    font-size: 50px;
+    text-shadow: blueviolet 1px 1px;
+    color: orange;
+}

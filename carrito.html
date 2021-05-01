@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Pagina principal del carrito</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+                    <a class="navbar-brand nav-link text-white" href="panelprinsipal.html">inicio</a>
+                    <a class="navbar-brand nav-link text-white" href="index.html">salir</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/img1.jpg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Vinilo negro</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/vinilonegro.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Vinilo negro el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">vinilo rojo</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/vinilorojo.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">300</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Vinilo rojo el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Vinilo Transparente</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/vinilotransparente.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">400</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Vinilo transparente el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Vinilo Verde</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/viniloverde.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">600</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>Vinilo verde el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Vinilo Verde Transparente</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/viniloverdetrans.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">400</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>vinilo verde transparente el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Vinilo Negro</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/carrito/vinilonegro.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">500</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>vinilo negro el metro</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <br> 
+
+    <section>
+          <div class="social d-flex justify-content-center text-white">
+              <h5>ENCUENTRANOS EN LAS DISTINTAS REDES SOCIALES:</h5>
+          </div>
+        </section>
+        <section>
+          <div class="social d-flex justify-content-center">
+              <a class="mx-2" href=https://www.facebook.com/matias.salvatore.90/photos> <i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="mx-2" href=https://www.instagram.com/jessandetailing/> <i class="fab fa-instagram"></i></a>
+              <a class="mx-2" href=https://www.youtube.com/channel/UC7gUS11k7wc4ifR6ipn3ucA/videos> <i
+                  class="fab fa-youtube"></i></a>
+          </div>
+          <div>
+              <div class="container">
+                  <div class="social d-flex justify-content-center text-white">
+                      <h4>Tu compra estara protegida y 100% segura | contamos con envio gratis a partir de $ 1500 arg</h1>
+                  </div>
+              </div>
+          </div>
+          </div>
+          </div>
+        </section>
+<footer>
+        <section>
+            <div class="#colores">
+            <div class="social d-flex justify-content-center">
+              Copyright © tu sitio web 2020 jessan, ploteo y pulidos.<br> Todos los derechos reservados.
+          </div>
+        </div>
+        </section>
+    <section>
+        <div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+          <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+          </a>
+        </div>  
+    </section>
+</footer>
+</body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/pedido.js"></script>
+<script src="js/animacion.js"></script>
+</html>
