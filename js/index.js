@@ -1,31 +1,42 @@
-let miFormulario = document.getElementById("formulario");
+let login_hola = document.getElementById("login_out_hola");
+let login_salir = document.getElementById("login_out_salir");
+let login_in = document.getElementById("login_in");
+let nombre_usuario_span = document.getElementById("nombre_usuario");
+let boton_informacion = document.getElementById("boton_informacion");
 
-miFormulario.addEventListener("submit", validarFormulario);
+login_hola.style.display = "none";
+login_salir.style.display = "none";
 
-function validarFormulario(tomaValor) {
-  //validar la informaciòn cargada del formulario
-  tomaValor.preventDefault();
-  if (document.getElementById("nombre").value == "") {
-    alert("complete su nombre completo para ingresar");
+let nombre_usuario = localStorage.getItem('nombre');
+
+
+if(estaLogeado()){
+  login_hola.style.display = "block";
+  login_salir.style.display = "block";
+  login_in.style.display = "none";
+  nombre_usuario_span.innerHTML = nombre_usuario;
+}
+
+login_salir.onclick = function(event) { 
+  borrarLocalStorage();
+  location.reload();
+};
+
+boton_informacion.onclick = function(event) { 
+
+  if(!estaLogeado()){
+    alert("tenes que estar logeado");
     return false;
   }
-  if (document.getElementById("apellido").value == "") {
-    alert("complete su apellido");
-    return false;
+};
+
+function estaLogeado(){
+  if(nombre_usuario != null){
+    return true;
   }
-  if (document.getElementById("dni").value == "") {
-    alert("complete su dni");
-    return false;
-  }
-  if (document.getElementById("mail").value == "") {
-    alert("complete su mail");
-    return false;
-  }
-  if (document.getElementById("telefono").value == "") {
-    alert("complete su numero de telefono");
-    return false;
-  }
-  alert("puede entrar sr/sra" +" "+ nombre.value +" "+ apellido.value +" "+ dni.value);
-  // console.log("Formulario Enviado"); se probo y funciona 
-  formulario.submit()
+  return false;
+}
+
+function borrarLocalStorage(){
+  localStorage.clear();
 }

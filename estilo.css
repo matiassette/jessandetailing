@@ -17,19 +17,29 @@ h4{
     text-shadow: blueviolet 1px 1px;
 
 }
-body{
-	background:url(img/img1.jpg) no-repeat center center fixed;
+header{
+	/*background:url(img/img1.jpg) no-repeat center center fixed;*/
 	background-size:cover;
-	height:400px;
+	height:80px;
 	width: 100%;
 	/* position: relative;
 	left:0;
 	top:0; */
 }
+
+.body_login{
+    background:url(img/foto_auto.jpg) no-repeat center center fixed;
+    background-size:cover;
+    height:80px;
+    width: 100%;
+}
+
+
 /* body{
     background-color: violet;
     /* background-image:url(img1.jpg);
 } */
+
 div{
     /* todo los div la parte que referencia va aser de color blanca */
     text-align: center;
@@ -40,19 +50,21 @@ div{
     border-bottom-style: white;
     border-left-style: white;
     text-decoration-color: honeydew;
-    background-color: blue;
+    background-color: grey;
     display: grid;
     /* grid-template-columns: 200px repeat(2, 200px) 100px; */
     /* grid-template-rows: repeat(2, 50px 100px); */
 
-    background: orangered;
+    /*background: orangered;*/
     grid-column-start: x0;
     grid-column-end: x3; 
     
     /* Equivalente a*/
     grid-column: x0 / x3;
 
-}div1{
+}
+
+.div1{
     /* todo los div la parte que referencia va aser de color blanca */
     text-align: center;
     border: 10px;
@@ -73,12 +85,12 @@ div{
     border-bottom-style: white;
     border-left-style: white;
     text-decoration-color: honeydew;
-    background-color: blue;
+    /*background-color: blue;*/
     display: grid;
     /* grid-template-columns: 200px repeat(2, 200px) 100px; */
     /* grid-template-rows: repeat(2, 50px 100px); */
 
-    background: orangered;
+    /* background: orangered;*/
     grid-column-start: x0;
     grid-column-end: x3; 
     
@@ -103,7 +115,7 @@ div{
     font-size: 50px;
 
 }
-p1{ 
+.p1{ 
     text-align: center;
     text-decoration-color: honeydew;
     font-size: white;
@@ -125,8 +137,14 @@ p1{
     font-size: 50px;
     text-shadow: blueviolet 0px 0px;
     color: orange;
-}a{
+}
+
+a{
     font-size: 20px;
+}
+
+.anav_bar{
+    color: black;
 
 }
 table{
@@ -141,7 +159,7 @@ table{
     text-shadow: blueviolet 0px 0px;
     float: center;
 }
-color{
+.color{
     text-align: center;
     text-decoration-color: honeydew;
     color: white;
@@ -175,4 +193,8 @@ color{
 
 .my-float{
 	margin-top:16px;
+}
+
+.link{
+    color: black;
 }
