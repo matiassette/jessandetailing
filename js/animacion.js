@@ -25,7 +25,25 @@ $("h3").css({"background-color":"blue",
                     .slideUp(000)
                     .slideDown(3500)
                     .delay(2000);
-$("p").css("background-color","blue")
+$("h4").css({"background-color":"blue",
+                    "color": "white",
+                    "font-size": "30px",
+                    "border-left": "10px solid #black",
+                    "opacity":"0.8",
+                    "width":"300px"})
+                    .slideUp(000)
+                    .slideDown(3500)
+                    .delay(2000);
+$("h5").css({"background-color":"blue",
+                    "color": "white",
+                    "font-size": "20px",
+                    "border-left": "10px solid #black",
+                    "opacity":"0.8",
+                    "width":"300px"})
+                    .slideUp(000)
+                    .slideDown(3500)
+                    .delay(2000);            
+$("p").css({"background-color":"blue","color":"white"})
                     .slideUp(000)
                     .slideDown(3500)
                     .delay(2000);
@@ -36,6 +54,19 @@ $("p1").css({"background-color":"green",
                     .slideUp(000)
                     .slideDown(3500)
                     .delay(2000);
-$("p1").css({"color":"white","text-align":"center"});
+$("p2").css({"color":"white","text-align":"center",
+            "background-color":"blue",
+            "font-size": "20px","border-left": "10px solid #black",
+            "opacity":"0.8","width":"600px"})
+                    .slideUp(000)
+                    .slideDown(3500)
+                    .delay(2000);
+$("p3").css({"color":"white","text-align":"rigth",
+            "background-color":"blue",
+            "font-size": "20px","border-left": "10px solid #black",
+            "opacity":"0.8","width":"900px"})
+                    .slideUp(000)
+                    .slideDown(3500)
+                    .delay(2000);
 
 

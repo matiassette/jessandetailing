@@ -25,6 +25,7 @@ function validarFormulario(tomaValor) {
     alert("complete su numero de telefono");
     return false;
   }
-  alert("puede entrar sr/sra" +" "+ nombre.value +" "+ apellido.value +" "+ dni.value)
+  alert("puede entrar sr/sra" +" "+ nombre.value +" "+ apellido.value +" "+ dni.value);
   // console.log("Formulario Enviado"); se probo y funciona 
+  formulario.submit()
 }

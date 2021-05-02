@@ -12,6 +12,9 @@ h1{
 }
 h4{
     color: blueviolet; /* aca se pone el color a las letras */
+    color: white; /* aca se pone el color a las letras */
+    font-size: 20px;
+    text-shadow: blueviolet 1px 1px;
 
 }
 body{
@@ -49,6 +52,16 @@ div{
     /* Equivalente a*/
     grid-column: x0 / x3;
 
+}div1{
+    /* todo los div la parte que referencia va aser de color blanca */
+    text-align: center;
+    border: 10px;
+    color: aquamarine;
+    display:grid;
+    /* grid-template-columns: 200px repeat(2, 200px) 100px; */
+    /* grid-template-rows: repeat(2, 50px 100px); */
+
+    background: aquamarine;
 }
 .colores{
     /* todo los div la parte que referencia va aser de color blanca */
@@ -112,6 +125,9 @@ p1{
     font-size: 50px;
     text-shadow: blueviolet 0px 0px;
     color: orange;
+}a{
+    font-size: 20px;
+
 }
 table{
     text-align: center;
@@ -136,4 +152,27 @@ color{
     font-size: 50px;
     text-shadow: blueviolet 1px 1px;
     color: orange;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
 }
