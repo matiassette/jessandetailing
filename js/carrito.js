@@ -208,9 +208,33 @@ class Carrito {
         igv = parseFloat(total * 0.18).toFixed(2);
         subtotal = parseFloat(total-igv).toFixed(2);
 
-        document.getElementById('subtotal').innerHTML = "$" + subtotal;
-        document.getElementById('igv').innerHTML = "$" + igv;
-        document.getElementById('total').value = "$" + total.toFixed(2);
+        let valorPesosTotal = total.toFixed(2);
+        this.calcularValorDolar(valorPesosTotal);
+
+        document.getElementById('subtotal').innerHTML = "$ " + subtotal;
+        document.getElementById('igv').innerHTML = "$ " + igv;
+        document.getElementById('total').value = "$ " + valorPesosTotal;
+        
+    }
+
+
+    calcularValorDolar(valorPesosTotal){
+        let precioDolarVenta = 0; 
+
+        //URL de la API de dolarSI
+        const url_dolar = "https://www.dolarsi.com/api/api.php?type=valoresprincipales" 
+        $.get( url_dolar, function( precio, estado ) {
+            if (estado == "success") { 
+
+                precioDolarVenta = precio[0].casa.venta; 
+
+                precioDolarVenta = precioDolarVenta.replace(',', '.') 
+                precioDolarVenta = parseFloat(precioDolarVenta) 
+                let totalEnDolares = valorPesosTotal / precioDolarVenta;
+                
+                document.getElementById('total_dolar').value = "u$s " + totalEnDolares.toFixed(2);
+            }
+        })
     }
 
     obtenerEvento(e) {
