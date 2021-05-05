@@ -7,7 +7,16 @@ h1{
     color: white; /* aca se pone el color a las letras */
     font-size: 50px;
     text-shadow: blueviolet 1px 1px;
-    color: orange;
+    color: orangered;
+    
+}
+h2{
+    text-align: center;
+    text-decoration-color: honeydew;
+    font-size: white;
+    font-size:large;
+    font-weight:bold;
+    text-shadow: blueviolet 1px 1px;
     
 }
 h4{

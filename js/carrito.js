@@ -30,8 +30,7 @@ class Carrito {
 
         if(productosLS === infoProducto.id){
             Swal.fire({
-                type: 'info',
-                title: 'Oops...',
+                type: 'info',   
                 text: 'El producto ya está agregado',
                 showConfirmButton: false,
                 timer: 1000
@@ -89,19 +88,19 @@ class Carrito {
     //Almacenar en el LS
     guardarProductosLocalStorage(producto){
         let productos;
-        //Toma valor de un arreglo con datos del Local Storage
+        //Toma valor de un arreglo con datos del LS
         productos = this.obtenerProductosLocalStorage();
         //Agregar el producto al carrito
         productos.push(producto);
-        //Agregamos al Local Storage
+        //Agregamos al LS
         localStorage.setItem('productos', JSON.stringify(productos));
     }
 
-    //Comprobar que tenga elementos en el Local Storage
+    //Comprobar que hay elementos en el LS
     obtenerProductosLocalStorage(){
         let productoLS;
 
-        //Comprobar si tiene algo en Local Storage
+        //Comprobar si hay algo en LS
         if(localStorage.getItem('productos') === null){
             productoLS = [];
         }
@@ -111,7 +110,7 @@ class Carrito {
         return productoLS;
     }
 
-    //Mostrar los productos guardados en el Local Storage
+    //Mostrar los productos guardados en el LS
     leerLocalStorage(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
@@ -132,7 +131,7 @@ class Carrito {
         });
     }
 
-    //Mostrar los productos guardados en el Local Storage en compra.html
+    //Mostrar los productos guardados en el LS en compra.html
     leerLocalStorageCompra(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
@@ -156,23 +155,23 @@ class Carrito {
         });
     }
 
-    //Eliminar producto por ID del Local Storage
+    //Eliminar producto por ID del LS
     eliminarProductoLocalStorage(productoID){
         let productosLS;
         //Obtenemos el arreglo de productos
         productosLS = this.obtenerProductosLocalStorage();
-        //Comparar el id del producto borrado con Local Storage
+        //Comparar el id del producto borrado con LS
         productosLS.forEach(function(productoLS, index){
             if(productoLS.id === productoID){
                 productosLS.splice(index, 1);
             }
         });
 
-        //Añadimos el arreglo actual al Local Storage
+        //Añadimos el arreglo actual al LS
         localStorage.setItem('productos', JSON.stringify(productosLS));
     }
 
-    //Eliminar todos los datos del Local Storage
+    //Eliminar todos los datos del LS
     vaciarLocalStorage(){
         localStorage.clear();
     }
@@ -184,7 +183,7 @@ class Carrito {
         if(this.obtenerProductosLocalStorage().length === 0){
             Swal.fire({
                 type: 'error',
-                text: 'El carrito está vacío, agrega algún producto',
+                text: 'El carrito está vacío',
                 showConfirmButton: false,
                 timer: 2000
             })
@@ -211,14 +210,16 @@ class Carrito {
         let valorPesosTotal = total.toFixed(2);
         this.calcularValorDolar(valorPesosTotal);
 
-        document.getElementById('subtotal').innerHTML = "$ " + subtotal;
-        document.getElementById('igv').innerHTML = "$ " + igv;
-        document.getElementById('total').value = "$ " + valorPesosTotal;
+        document.getElementById('subtotal').innerHTML = "$" + subtotal;
+        document.getElementById('igv').innerHTML = "$" + igv;
         
+        document.getElementById('total').value = "$ " + valorPesosTotal;
+
+        document.getElementById('total').value = "$" + total.toFixed(2);
     }
 
 
-    calcularValorDolar(valorPesosTotal){
+calcularValorDolar(valorPesosTotal){
         let precioDolarVenta = 0; 
 
         //URL de la API de dolarSI
@@ -236,6 +237,7 @@ class Carrito {
             }
         })
     }
+
 
     obtenerEvento(e) {
         e.preventDefault();
