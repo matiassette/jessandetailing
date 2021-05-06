@@ -60,7 +60,9 @@ function procesarCompra() {
 
 
                 }, (err) => {
-                    alert("gracias por realizar su compra le llegara un mail");
+                    alert("Gracias por realizar su compra le llegara un mail, hasta la proxima");
+                    compra.vaciarLocalStorage();
+                    window.location.href = "index.html";
                 });
 
             return false;
