@@ -219,7 +219,7 @@ class Carrito {
     }
 
 
-calcularValorDolar(valorPesosTotal){
+    calcularValorDolar(valorPesosTotal){
         let precioDolarVenta = 0; 
 
         //URL de la API de dolarSI
